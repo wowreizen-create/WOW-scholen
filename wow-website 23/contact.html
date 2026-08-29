@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | WOW — The Experience Company</title>
+<meta name="description" content="Neem contact op met WOW Reizen: plan een gratis kennismaking of vraag informatie aan via het contactformulier.">
+<meta property="og:title" content="Contact | WOW — The Experience Company">
+<meta property="og:description" content="Neem contact op met WOW Reizen: plan een gratis kennismaking of vraag informatie aan via het contactformulier.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/wow-logo-black.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/wow-logo-white.png" alt="WOW logo">
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="reizen.html">Reizen</a>
+      <a href="waarom-wow.html">Waarom WOW</a>
+      <a href="veiligheid.html">Veiligheid</a>
+      <a href="over-wow.html">Over WOW</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-sm" href="https://calendly.com/wowreizen/30min" target="_blank" rel="noopener">Plan een kennismaking &rarr;</a>
+      <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.mobile-menu').classList.add('open');document.body.style.overflow='hidden';">
+        &#9776;
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <div class="mobile-menu-top">
+    <img src="assets/wow-logo-white.png" alt="WOW logo">
+    <button class="mobile-menu-close" aria-label="Sluiten" onclick="document.querySelector('.mobile-menu').classList.remove('open');document.body.style.overflow='';">&times;</button>
+  </div>
+  <a href="index.html">Home</a>
+      <a href="reizen.html">Reizen</a>
+      <a href="waarom-wow.html">Waarom WOW</a>
+      <a href="veiligheid.html">Veiligheid</a>
+      <a href="over-wow.html">Over WOW</a>
+      <a href="contact.html">Contact</a>
+  <a class="btn btn-block" href="https://calendly.com/wowreizen/30min" target="_blank" rel="noopener">Plan een kennismaking &rarr;</a>
+</div>
+
+<section class="hero-compact" style="min-height:44vh;">
+  <div class="hero-media"><img src="assets/wow-hero-palamos.jpg" alt="Contact WOW" class=""></div>
+  <div class="wrap hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> &rarr; Contact</div>
+    <span class="kicker">Klaar voor jullie WOW?</span>
+    <h1>Vertel ons wat jullie zoeken.</h1>
+    <p class="hero-sub">Wij laten zien wat er mogelijk is. Vul het formulier in of plan direct een gratis kennismaking.</p>
+  </div>
+</section>
+
+<section class="contact-section reveal">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <h3>Liever direct plannen?</h3>
+        <p>Plan een gratis kennismaking van 30 minuten &mdash; we bespreken jullie school, leerlingen en wensen.</p>
+        <a class="btn btn-block" href="https://calendly.com/wowreizen/30min" target="_blank" rel="noopener">Plan mijn kennismaking &rarr;</a>
+        <div class="contact-info-row"><div class="icon">&#128197;</div><div><strong>Kennismaking</strong><span>30 minuten, via Calendly</span></div></div>
+        <div class="contact-info-row"><div class="icon">&#128247;</div><div><strong>Instagram</strong><span><a href="https://www.instagram.com/wowreizen" target="_blank" rel="noopener" style="color:#fff;">@wowreizen</a></span></div></div>
+        <div class="contact-info-row"><div class="icon">&#127968;</div><div><strong>WOW Reizen</strong><span>Sport, Cultuur en Plezier.</span></div></div>
+      </div>
+
+      <div>
+        <form id="lead-form" class="form-grid lead-form" novalidate>
+          <div class="field full"><label for="school">Schoolnaam *</label><input id="school" name="school" type="text" required></div>
+          <div class="field"><label for="naam">Naam *</label><input id="naam" name="naam" type="text" required></div>
+          <div class="field"><label for="functie">Functie *</label><input id="functie" name="functie" type="text" placeholder="Bijv. teamleider, LO-docent" required></div>
+          <div class="field"><label for="email">E-mail *</label><input id="email" name="email" type="email" required></div>
+          <div class="field"><label for="telefoon">Telefoonnummer *</label><input id="telefoon" name="telefoon" type="tel" required></div>
+          <div class="field"><label for="aantal">Aantal leerlingen</label><input id="aantal" name="aantal_leerlingen" type="number" min="1"></div>
+          <div class="field">
+            <label for="niveau">Onderwijsniveau</label>
+            <select id="niveau" name="onderwijsniveau">
+              <option value="">Kies een niveau</option>
+              <option>VMBO</option><option>HAVO</option><option>VWO</option><option>Gemengd</option><option>Anders</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bestemming">Gewenste bestemming</label>
+            <select id="bestemming" name="bestemming">
+              <option value="">Nog niet zeker</option>
+              <option>WOW Espana &mdash; Palam&oacute;s &amp; Barcelona</option>
+              <option>WOW Italia &mdash; Milaan / Veneti&euml; / Caorle</option>
+              <option>WOW in the Snow &mdash; Zell am See</option>
+              <option>WOW in the Snow Exclusive &mdash; december 2026 (individueel)</option>
+              <option>WOW Lisboa Super Surf &mdash; Lissabon</option>
+            </select>
+          </div>
+          <div class="field"><label for="periode">Gewenste reisperiode</label><input id="periode" name="reisperiode" type="text" placeholder="Bijv. voorjaar 2027"></div>
+          <div class="field"><label for="budget">Indicatief budget per leerling</label><input id="budget" name="budget" type="text" placeholder="Bijv. &euro;300&ndash;&euro;400"></div>
+          <div class="field full"><label for="wensen">Aanvullende wensen</label><textarea id="wensen" name="wensen" placeholder="Vertel ons meer over wat jullie zoeken..."></textarea></div>
+          <div class="field full">
+            <button type="submit" class="btn btn-block btn-lg">Plan mijn kennismaking &rarr;</button>
+            <p class="form-note">Door dit formulier te versturen ga je akkoord dat WOW Reizen contact met je opneemt over deze aanvraag.</p>
+          </div>
+        </form>
+        <div class="form-success">
+          <div class="check">&#10003;</div>
+          <h3>Bedankt.</h3>
+          <p>Jullie eerste stap naar WOW is gezet. Het WOW-team neemt binnen enkele werkdagen contact op.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section reveal">
+  <div class="wrap-narrow">
+    <div class="section-head">
+      <span class="kicker">Veelgestelde vragen</span>
+      <h2>Alles wat je wilt weten</h2>
+    </div>
+    <div class="faq-cats">
+      <button class="faq-cat-btn active" data-cat="all">Alles</button>
+      <button class="faq-cat-btn" data-cat="algemeen">Algemeen</button>
+      <button class="faq-cat-btn" data-cat="veiligheid">Veiligheid</button>
+      <button class="faq-cat-btn" data-cat="praktisch">Praktisch</button>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" data-cat="algemeen">
+        <div class="faq-q"><span>Voor welke leeftijd zijn WOW-reizen bedoeld?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">WOW-reizen zijn ontwikkeld voor scholieren in het voortgezet onderwijs, doorgaans in de leeftijd van 13 tot 19 jaar.</div></div>
+      </div>
+      <div class="faq-item" data-cat="algemeen">
+        <div class="faq-q"><span>Wat is de minimale en maximale groepsgrootte?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Dit verschilt per Experience: WOW Espana schoolreizen vanaf 40 tot 160 leerlingen, WOW in the Snow tot 74 deelnemers. Neem contact op voor maatwerk.</div></div>
+      </div>
+      <div class="faq-item" data-cat="praktisch">
+        <div class="faq-q"><span>Wat kost een WOW-reis?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Richtprijzen per leerling: WOW Espana &euro;550, WOW Italia &euro;650, WOW in the Snow &euro;650, WOW Lisboa Super Surf &euro;800. Deze prijzen zijn compleet &mdash; geen verborgen kosten. De uiteindelijke prijs hangt af van programma, periode en groepsgrootte; voor schoolreizen op maat stellen we een prijsindicatie samen na een kennismaking.</div></div>
+      </div>
+      <div class="faq-item" data-cat="veiligheid">
+        <div class="faq-q"><span>Hoe is de begeleiding tijdens de reis geregeld?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Professionele begeleiders reizen mee op elke WOW-reis, inclusief leden van het WOW-team zelf. Zie de veiligheidspagina voor alle details.</div></div>
+      </div>
+      <div class="faq-item" data-cat="algemeen">
+        <div class="faq-q"><span>Worden sportstudenten ingezet tijdens de reis?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Waar mogelijk werkt WOW samen met studenten van relevante sport- en onderwijsopleidingen, die ondersteunen binnen een professionele structuur. Zij vervangen nooit gekwalificeerde professionals waar specifieke bevoegdheden nodig zijn.</div></div>
+      </div>
+      <div class="faq-item" data-cat="praktisch">
+        <div class="faq-q"><span>Zijn de reizen verzekerd?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Ja. WOW-reizen zijn gedekt door VZR Garant financi&euml;le bescherming en reizigers krijgen een passende reisverzekering, inclusief wintersportdekking voor WOW in the Snow.</div></div>
+      </div>
+      <div class="faq-item" data-cat="praktisch">
+        <div class="faq-q"><span>Hoe gaat WOW om met dieetwensen en allergie&euml;n?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Dieetwensen, allergie&euml;n en medische bijzonderheden worden voorafgaand aan de reis uitgevraagd en meegenomen in de organisatie.</div></div>
+      </div>
+      <div class="faq-item" data-cat="veiligheid">
+        <div class="faq-q"><span>Wat is het beleid rondom alcohol en drugs?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">WOW hanteert een zero-tolerance beleid voor alcohol en drugs tijdens alle reizen, helder gecommuniceerd naar leerlingen en ouders vooraf.</div></div>
+      </div>
+      <div class="faq-item" data-cat="veiligheid">
+        <div class="faq-q"><span>Hoe blijven ouders op de hoogte tijdens de reis?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Via een groepsapp worden ouders doorlopend op de hoogte gehouden van het programma en eventuele bijzonderheden.</div></div>
+      </div>
+      <div class="faq-item" data-cat="praktisch">
+        <div class="faq-q"><span>Kan het programma op maat gemaakt worden voor onze school?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Ja. Na een kennismakingsgesprek stellen we een Experience samen die past bij jullie leerlingen, onderwijsniveau en wensen.</div></div>
+      </div>
+      <div class="faq-item" data-cat="praktisch">
+        <div class="faq-q"><span>Hoe zit het met annuleren of wijzigen?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Annulerings- en wijzigingsvoorwaarden worden per boeking gedeeld en zijn afgestemd op de geldende reisvoorwaarden. Vraag hiernaar tijdens de kennismaking.</div></div>
+      </div>
+      <div class="faq-item" data-cat="praktisch">
+        <div class="faq-q"><span>Wat gebeurt er na het invullen van het contactformulier?</span><span class="plus">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Je ontvangt een bevestiging en het WOW-team neemt binnen enkele werkdagen contact op om een kennismaking in te plannen.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/wow-logo-white.png" alt="WOW logo">
+        <p>WOW is geen reisorganisatie die ook schoolreizen doet. WOW komt uit het onderwijs — en combineert onderwijskennis, professionele organisatie, sport &amp; avontuur, veiligheid en persoonlijke groei tot The WOW Experience.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/wowreizen" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <a href="reizen.html">Reizen</a>
+        <a href="waarom-wow.html">Waarom WOW</a>
+        <a href="veiligheid.html">Veiligheid</a>
+        <a href="over-wow.html">Over WOW</a>
+      </div>
+      <div class="footer-col">
+        <h4>Experiences</h4>
+        <a href="experience-spain.html">WOW Espana</a>
+        <a href="experience-italy.html">WOW Italia</a>
+        <a href="experience-snow.html">WOW in the Snow</a>
+        <a href="experience-lisboa.html">WOW Lisboa Super Surf</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://calendly.com/wowreizen/30min" target="_blank" rel="noopener">Plan een kennismaking</a>
+        <a href="contact.html">Contactformulier</a>
+        <a href="https://www.instagram.com/wowreizen" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 WOW Reizen — The Experience Company. Sport, Cultuur en Plezier.</span>
+      <span>Deze site is een ontwerp/opzet klaar voor verdere invulling (CMS, echte cijfers en testimonials).</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
